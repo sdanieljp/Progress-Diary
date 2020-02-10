@@ -1,0 +1,67 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.mypage-container {
+  width: 960px;
+}
+
+.task-wrapper {
+  float: left;
+  width: 240px;
+  display: inline-block;
+}
+
+.calendar-wrapper {
+  background-color: white;
+  width: 720px;
+  display: inline-block;
+}
+
+.calendar {
+  width: 680px;
+  padding:0 auto;
+}
+
+/*--------タブ--------*/
+.tab-wrapper {
+  clear:both;
+}
+
+.tab_item {
+  display: none;
+}
+
+.is-active-item {
+  display: block;
+}
+
+.tab_link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.tab_btn {
+  font-size: 24px;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-bottom: solid 1px mediumturquoise;
+  display: inline-block;
+  background-color: mediumturquoise;
+  opacity: 0.5;
+  border-radius: 5px 5px 0 0;
+}
+
+.is-active-btn {
+  opacity: 1;
+  border-bottom: solid 1px mediumturquoise;
+  color: #00BFFF;
+}
+
+.tab_item {
+  width: 960px;
+  height: 700px;
+  padding: 5px;
+  color: #00BFFF;
+  background-color: mediumturquoise;
+}

@@ -1,0 +1,210 @@
+/*-------  共通CSS  --------*/
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 14px;
+  color: #bbb;
+  background-color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+
+  &:hover {
+    color: #5983ff;
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 840px;
+  padding: 0 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*-------  header  --------*/
+
+header {
+  height: 50px;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(6,25,25,0.9);
+  line-height: 45px;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+  padding-left: 10px;
+}
+
+.header-logo {
+  color: #aaa;
+  font-weight: 700;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.header-menu-right {
+  float: right;
+  padding-right: 10px;
+
+  li {
+    float: left;
+  }
+
+  .link {
+    color: #323A45;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: #5983ff;
+      transition: color .3s;
+    }
+  }
+
+  .login {
+    background-color: rgba(255,255,255,0.3);
+    transition: all 0.5s;
+    padding: 0 25px;
+    color: white;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+        background-color: rgba(255,255,255,0.5);
+    }
+  }
+
+}
+
+/*-------  footer  --------*/
+footer {
+  clear:both;
+  width:960px;
+  height: 400px;
+  display: inline-block;
+  background-color: #070e30;
+}
+
+/*-------  入力フォーム  --------*/
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 10px auto;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
+}
+
+.cp_iptxt input[type=password] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=password]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=password] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=password]:focus + i {
+	color: #da3c41;
+}
+
+/*-------  ボタン  --------*/
+
+.cp_button {
+	display: inline-block;
+	width: 160px;
+	padding: 1em;
+	line-height: 1.4;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.2s, color 0.2s, width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-radius 0.2s;
+	color: #7e57c2;
+	border: 1px solid #7e57c2;
+	border-radius: 0.2em;
+	background: transparent;
+}
+.cp_button:hover {
+	width: 180px;
+	color: #ffffff;
+	border-radius: 0.5em;
+	border: 1px solid #7e57c2;
+	background-color: #7e57c2;
+}
+.cp_button:active {
+	border-color: #5e35b1;
+	background-color: #5e35b1;
+}
+.cp_button:focus {
+	color: #7e57c2;
+	border: 1px solid #7e57c2;
+}
+.cp_button:focus:hover {
+	color: #ffffff;
+}

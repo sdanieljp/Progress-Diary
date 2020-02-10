@@ -1,0 +1,119 @@
+.top-wrapper
+  .container
+    h1 自己管理を、しよう
+    .btn.signup.signup-show
+      |新規登録はこちら
+    p or
+    .btn.facebook
+      span.fab.fa-facebook
+        |Facebookで登録
+    .btn.twitter
+      span.fab.fa-twitter
+        |Twitterで登録
+
+    .login-modal-wrapper#login-modal
+      .modal
+        .close-modal
+          i.fas.fa-times.fa-2x
+        .login-form
+          h2 Emailログイン
+        = form_with scope: :session, url: login_path, local: true do |f|
+          .cp_iptxt
+            = f.text_field :email, id: 'session_email', placeholder: 'メールアドレス'
+            i.fas.fa-envelope.fa-lg.fa-fw aria-hidden= "true"
+          .cp_iptxt
+            = f.password_field :password, id: 'session_password', placeholder: 'パスワード'
+            i.fas.fa-key.fa-lg.fa-fw aria-hidden= "true"
+          = f.submit 'ログインする', class: 'btn cp_button'
+    .signup-modal-wrapper#signup-modal
+      .modal
+        .close-modal
+          i.fas.fa-times.fa-2x
+
+        .signup-form
+          h2 Emailで新規登録
+        = form_with model: [:admin, @user], local: true do |f|
+          .cp_iptxt
+            = f.text_field :name, placeholder: '名前'
+            i.fas.fa-user.fa-lg.fa-fw aria-hidden= "true"
+          .cp_iptxt
+            = f.text_field :email, placeholder: 'メールアドレス'
+            i.fas.fa-envelope.fa-lg.fa-fw aria-hidden= "true"
+          .cp_iptxt
+            = f.password_field :password, placeholder: 'パスワード'
+            i.fas.fa-key.fa-lg.fa-fw aria-hidden= "true"
+          .cp_iptxt
+            = f.password_field :password_confirmation, placeholder: 'パスワード(確認)'
+            i.fas.fa-key.fa-lg.fa-fw aria-hidden= "true"
+          = f.submit '新規登録', class: 'btn cp_button'
+
+.introduction-wrapper
+  .container
+    .heading
+      h2 アプリケーション紹介
+      .first-stage
+        .icon-wrapper
+          span.fa-stack.fa-3x
+            i.fas.fa-circle.fa-stack-2x.circle-sky
+            i.fas.fa-book.fa-stack-1x.fa-inverse
+          .intro-text
+            p
+            |このアプリケーションを使用することで自分を律した生活を送ることができます
+        .icon-wrapper
+          span.fa-stack.fa-3x
+            i.fas.fa-circle.fa-stack-2x.circle-black
+            i.fas.fa-book.fa-stack-1x.icon-white
+          .intro-text
+            p
+            |このアプリケーションを使用することで自分を律した生活を送ることができます
+        .icon-wrapper
+          span.fa-stack.fa-3x
+            i.fas.fa-circle.fa-stack-2x.circle-sky
+            i.fas.fa-book.fa-stack-1x.fa-inverse
+          .intro-text
+            p
+            |このアプリケーションを使用することで自分を律した生活を送ることができます
+      .second-stage
+        .icon-wrapper
+          span.fa-stack.fa-3x
+            i.fas.fa-circle.fa-stack-2x.circle-black
+            i.fas.fa-book.fa-stack-1x.icon-white
+          .intro-text
+            p
+            |このアプリケーションを使用することで自分を律した生活を送ることができます
+        .icon-wrapper
+          span.fa-stack.fa-3x
+            i.fas.fa-circle.fa-stack-2x.circle-sky
+            i.fas.fa-book.fa-stack-1x.fa-inverse
+          .intro-text
+            p
+            |このアプリケーションを使用することで自分を律した生活を送ることができます
+        .icon-wrapper
+          span.fa-stack.fa-3x
+            i.fas.fa-circle.fa-stack-2x.circle-black
+            i.fas.fa-book.fa-stack-1x.icon-white
+          .intro-text
+            p
+            |このアプリケーションを使用することで自分を律した生活を送ることができます
+
+.faq-wrapper
+  .container
+    .heading
+      h2 FAQ
+      .faq
+        ul#faq-list
+          li.faq-list-item
+            h3.question ProgressDiaryの公式キャラクターはなんですか？
+            span.fas.fa-plus-circle.kurobeni
+            .answer
+              p ゴロといいます。世界一かわいいネコです。イヌではありません。
+          li.faq-list-item
+            h3.question ゴロはオスですか？それともメスですか？
+            span.fas.fa-plus-circle.kurobeni
+            .answer
+              p ゴロはオスです。
+          li.faq-list-item
+            h3.question ProgressDiaryでは何ができますか？
+            span.fas.fa-plus-circle.kurobeni
+            .answer
+              p このアプリケーションを使用することで自分を律した生活を送ることができます。

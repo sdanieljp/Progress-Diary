@@ -1,0 +1,155 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/*-------  トップ  --------*/
+.top-wrapper {
+  padding: 150px 0 130px 0;
+  background-image: image-url("top1.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .2s;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+/*-------  モーダル  --------*/
+.login-modal-wrapper, .signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+/*-------  イントロデュース  --------*/
+.introduction-wrapper {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.first-stage {
+  padding-bottom: 30px;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 250px;
+  padding-right: 20px;
+
+  span {
+    float: left;
+  }
+
+  .circle-sky {color: #17bfd6;}
+  .circle-black {color: black;}
+  .icon-white {color: white;}
+}
+
+
+
+/*-------  FAQ  --------*/
+.faq-wrapper {
+  background-color:  #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+}
+
+#faq-list {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+
+  h2 {
+  font-weight: normal;
+  }
+}
+
+/*-------  アコーディオン  --------*/
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+
+  h3 {
+    font-size: 14px;
+  }
+
+  span {
+    position:absolute;
+    top:0;
+    right:5px;
+    font-size:13px;
+  }
+
+  .kurobeni {
+    color: #302833;
+  }
+}
+
+.answer {
+  font-size: 12px;
+  display: none;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+}
