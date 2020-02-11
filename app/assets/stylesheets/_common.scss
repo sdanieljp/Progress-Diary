@@ -19,17 +19,6 @@ li {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-  color: #323A45;
-  transition: all .3s;
-
-  &:hover {
-    color: #5983ff;
-    text-decoration: none;
-  }
-}
-
 .container {
   width: 840px;
   padding: 0 5px;
@@ -61,52 +50,17 @@ header {
 }
 
 .header-logo {
+  font-family: 'Lato', helvetica, arial, sans-serif;
   color: #aaa;
-  font-weight: 700;
   font-size: 22px;
   cursor: pointer;
-}
-
-.header-menu-right {
-  float: right;
-  padding-right: 10px;
-
-  li {
-    float: left;
-  }
-
-  .link {
-    color: #323A45;
-    font-weight: 700;
-    padding: 10px;
-    text-decoration: none;
-
-    &:hover {
-      color: #5983ff;
-      transition: color .3s;
-    }
-  }
-
-  .login {
-    background-color: rgba(255,255,255,0.3);
-    transition: all 0.5s;
-    padding: 0 25px;
-    color: white;
-    cursor: pointer;
-    display: block;
-
-    &:hover {
-        background-color: rgba(255,255,255,0.5);
-    }
-  }
-
 }
 
 /*-------  footer  --------*/
 footer {
   clear:both;
   width:960px;
-  height: 400px;
+  height: 200px;
   display: inline-block;
   background-color: #070e30;
 }
