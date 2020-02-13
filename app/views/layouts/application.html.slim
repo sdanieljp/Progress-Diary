@@ -27,8 +27,9 @@ html
               li = link_to 'Movies', '#', class: 'link'
               li.login.link#login-show Login
     .container
-      - if flash.notice.present?
-        = flash.notice
+      - if flash.present?
+        - flash.each do |key, value|
+          = content_tag(:div, value, class: [key, "alert"])
 
     = yield
     footer

@@ -56,6 +56,42 @@ header {
   cursor: pointer;
 }
 
+/*-------  flash  --------*/
+
+.alert {
+    border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+    padding:50px 15px 0 15px;
+    z-index: 2;
+    &:before {
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-display: swap;
+        font-size: 18px;
+        font-weight: 900;
+        height: 18px;
+        margin-right: 5px;
+        text-align: center;
+        vertical-align: top;
+        width: 22px;
+    }
+
+    @mixin alert-version($mainColor, $thinColor, $icon) {
+        background: $thinColor;
+        color: $mainColor;
+        &:before {
+            content: $icon;
+        }
+
+    }
+    &.notice { @include alert-version(#757575, #F5F5F5, "\f05a"); }
+    &.warning { @include alert-version(#F49A26, #FFF4C1, "\f071"); }
+    &.error { @include alert-version(#FF4C10, #FCE8E6, "\f06a"); }
+    &.success { @include alert-version(#00A69F, #DDF2F2, "\f06a"); }
+}
+
 /*-------  footer  --------*/
 footer {
   clear:both;
