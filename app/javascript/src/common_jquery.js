@@ -1,4 +1,5 @@
 $(function() {
+  // モーダル
   $('#login-show').click(function() {
     $('#login-modal').fadeIn();
   });
@@ -12,6 +13,7 @@ $(function() {
     $('#signup-modal').fadeOut();
   });
 
+  // アコーディオン
   $('.faq-list-item').click(function() {
    var $answer = $(this).find('.answer');
    if($answer.hasClass('open')) {
@@ -23,8 +25,9 @@ $(function() {
      $answer.addClass('open');
      $answer.slideDown();
      $(this).find('span').addClass('fa-minus-circle').removeClass('fa-plus-circle');
-
    }
  });
 
+  // アラートメッセージ
+  $('.alert').fadeOut(3000);
 });

@@ -6,6 +6,7 @@ body {
   font-size: 14px;
   color: #bbb;
   background-color: white;
+  border: solid;
 }
 
 ul {
@@ -59,12 +60,17 @@ header {
 /*-------  flash  --------*/
 
 .alert {
-    border-radius: 10px;
-    display: flex;
+    width: 760px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     font-size: 20px;
     line-height: 30px;
-    padding:50px 15px 0 15px;
-    z-index: 2;
+    border-radius: 10px;
+    z-index: 1;
     &:before {
         display: inline-block;
         font-family: "Font Awesome 5 Free";
@@ -95,10 +101,10 @@ header {
 /*-------  footer  --------*/
 footer {
   clear:both;
-  width:960px;
+  width: 960px;
   height: 200px;
   display: inline-block;
-  background-color: #070e30;
+  background-color: rgba(6,25,25,1);
 }
 
 /*-------  入力フォーム  --------*/
