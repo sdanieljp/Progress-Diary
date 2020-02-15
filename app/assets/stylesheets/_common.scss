@@ -105,6 +105,8 @@ footer {
   height: 200px;
   display: inline-block;
   background-color: rgba(6,25,25,1);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*-------  入力フォーム  --------*/
@@ -171,12 +173,23 @@ footer {
 	color: #da3c41;
 }
 
-/*-------  ボタン  --------*/
+/*-------  モーダルボタン  --------*/
+
+.modal_button {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .2s;
+  opacity: 0.8;
+}
 
 .cp_button {
 	display: inline-block;
 	width: 160px;
-	padding: 1em;
+	padding: 0.5em;
 	line-height: 1.4;
 	cursor: pointer;
 	user-select: none;
@@ -185,22 +198,26 @@ footer {
 	border: 1px solid #7e57c2;
 	border-radius: 0.2em;
 	background: transparent;
-}
-.cp_button:hover {
-	width: 180px;
-	color: #ffffff;
-	border-radius: 0.5em;
-	border: 1px solid #7e57c2;
-	background-color: #7e57c2;
-}
-.cp_button:active {
-	border-color: #5e35b1;
-	background-color: #5e35b1;
-}
-.cp_button:focus {
-	color: #7e57c2;
-	border: 1px solid #7e57c2;
-}
-.cp_button:focus:hover {
-	color: #ffffff;
+
+  &:hover {
+  	width: 180px;
+  	color: #ffffff;
+  	border-radius: 0.5em;
+  	border: 1px solid #7e57c2;
+  	background-color: #7e57c2;
+  }
+
+  &:active {
+  	border-color: #5e35b1;
+  	background-color: #5e35b1;
+  }
+
+  &:focus {
+  	color: #7e57c2;
+  	border: 1px solid #7e57c2;
+
+    &:hover {
+    	color: #ffffff;
+    }
+  }
 }

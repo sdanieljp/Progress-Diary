@@ -20,11 +20,12 @@
   cursor: pointer;
   transition: all .2s;
   opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
-.btn:hover {
-  opacity: 1;
-}
 
 .signup {
   background-color: #239b76;
@@ -37,7 +38,23 @@
 
 .twitter {
   background-color: #55acee;
+  margin-right: 10px;
 }
+
+.guest-login {
+  display: inline-block;
+
+  .guest {
+    background-color: #7456ce;
+    color: white;
+    border: none;
+    width: 168px;
+    margin-top: 0px;
+  }
+}
+
+
+
 
 /*-------  モーダル  --------*/
 .login-modal-wrapper, .signup-modal-wrapper {
@@ -56,7 +73,7 @@
   top: 20%;
   left: 34%;
   background-color: #e6ecf0;
-  color: #3a444c;
+  color: #30383f;
   padding: 20px 0 40px;
   border-radius: 10px;
   width: 450px;
@@ -92,8 +109,8 @@
     float: left;
   }
 
-  .circle-sky {color: #17bfd6;}
-  .circle-black {color: black;}
+  .circle-sky {color: #3ac4c9;}
+  .circle-black {color: #18233a;}
   .icon-white {color: white;}
 }
 
