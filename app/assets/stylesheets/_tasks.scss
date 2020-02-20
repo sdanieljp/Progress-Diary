@@ -10,42 +10,6 @@
   width: 960px;
 }
 
-.task_btn {
-	display: inline-block;
-	width: 130px;
-	padding: 0.5em;
-	line-height: 1.4;
-	cursor: pointer;
-	user-select: none;
-	transition: background-color 0.2s, color 0.2s, width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-radius 0.2s;
-	color: #7e57c2;
-	border: 1px solid #7e57c2;
-	border-radius: 0.2em;
-	background-color: white;
-
-  &:hover {
-  	width: 150px;
-  	color: #ffffff;
-  	border-radius: 0.5em;
-  	border: 1px solid #7e57c2;
-  	background-color: #7e57c2;
-  }
-
-  &:active {
-  	border-color: #5e35b1;
-  	background-color: #5e35b1;
-  }
-
-  &:focus {
-  	color: #7e57c2;
-  	border: 1px solid #7e57c2;
-
-    &:hover {
-    	color: #ffffff;
-    }
-  }
-}
-
 /*--------タブ--------*/
 .tab-wrapper {
   clear:both;
@@ -91,12 +55,12 @@
 }
 
 /*--------タスク--------*/
+
 .task-wrapper {
   display: inline-block;
   float: left;
   width: 240px;
   padding-left: 10px;
-
 
   table {
     width: 230px;
@@ -139,7 +103,7 @@
 
         &:hover {
           background-color: #93c2ff;
-          box-shadow: 0px -3px 5px 1px #7fb4e0 inset;
+          box-shadow: 0px -3px 5px 1px #7aafef inset;
         }
       }
 
