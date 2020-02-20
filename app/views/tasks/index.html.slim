@@ -9,18 +9,17 @@
 
     .tab_item.is-active-item#item1
       .task-wrapper
-        = link_to 'タスクの新規登録', new_task_path, class: 'btn'
-
         table
           thead
             tr
               th= Task.human_attribute_name(:name)
-              th= Task.human_attribute_name(:created_at)
+              th= Task.human_attribute_name(:deadline)
           tbody
             - @tasks.each do |task|
               tr
                 td= link_to task.name, task
-                td= task.created_at.strftime("%m/%d")
+                td= task.deadline.strftime("%m/%d")
+        = link_to 'タスクの新規登録', new_task_path, class: 'btn'
 
       .calendar-wrapper
         .calendar
