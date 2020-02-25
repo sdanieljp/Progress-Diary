@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_18_180028) do
+ActiveRecord::Schema.define(version: 2020_02_25_094119) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "tasks", force: :cascade do |t|
-    t.string "name", limit: 30, null: false
+  create_table "events", force: :cascade do |t|
+    t.string "title", limit: 30, null: false
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -24,7 +24,9 @@ ActiveRecord::Schema.define(version: 2020_02_18_180028) do
     t.datetime "deadline"
     t.integer "progress"
     t.string "priority", null: false
-    t.index ["user_id"], name: "index_tasks_on_user_id"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

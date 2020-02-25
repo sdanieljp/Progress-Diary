@@ -12,14 +12,14 @@
         table
           thead
             tr
-              th= Task.human_attribute_name(:name)
-              th= Task.human_attribute_name(:deadline)
+              th= Event.human_attribute_name(:title)
+              th= Event.human_attribute_name(:end_date)
           tbody
-            - @tasks.each do |task|
+            - @events.each do |event|
               tr
-                td= link_to task.name, task
-                td= task.deadline.strftime("%m/%d")
-        = link_to 'タスクの新規登録', new_task_path, class: 'btn'
+                td= link_to event.title, event
+                td= event.end_date&.strftime("%m/%d")
+        = link_to 'タスクの新規登録', new_event_path, class: 'btn'
 
       .calendar-wrapper
         .calendar

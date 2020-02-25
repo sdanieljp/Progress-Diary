@@ -1,0 +1,26 @@
+- if event.errors.present?
+  ul#error_explanation
+    - event.errors.full_messages.each do |message|
+      li= message
+
+
+= form_with model: event, local: true do |f|
+  = f.label :title
+  = f.text_field :title, id: 'event_title'
+  <br>
+  = f.label :description
+  = f.text_area :description, id: 'event_description'
+  <br>
+  = f.label :start_date
+  = f.datetime_select :start_date, id: 'event_start_date'
+  <br>
+  = f.label :end_date
+  = f.datetime_select :end_date, id: 'event_end_date'
+  <br>
+  = f.label :priority
+  = f.select :priority, ["低", "中", "高"], :prompt => "選択してください", id: 'event_priority'
+  <br>
+  = f.label :progress
+  = f.select :progress, ["0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"], :prompt => "選択してください", id: 'event_progress'
+  <br>
+  = f.submit nil, class: 'btn'

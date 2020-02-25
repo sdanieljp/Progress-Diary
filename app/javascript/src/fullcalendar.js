@@ -17,12 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks: true, // can click day/week names to navigate views
     businessHours: true, // display business hours
     editable: true,
-    events: [
-        {
-          title: 'Business Lunch',
-          start: '2020-02-03T13:00:00',
-        }
-    ]
+    events: '/events.json'
   });
 
   calendar.render();
