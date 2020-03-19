@@ -8,6 +8,10 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fullcalendar/core/main';
 @import '@fullcalendar/daygrid/main';
 
+$slick-font-path: 'slick-carousel/slick/fonts';
+@import 'slick-carousel/slick/slick';
+@import 'slick-carousel/slick/slick-theme';
+
 @import "./common";
 @import "./tasks";
 @import "./sessions";

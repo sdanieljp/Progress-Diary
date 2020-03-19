@@ -28,6 +28,28 @@ $(function() {
    }
  });
 
+  // トップへ戻るボタン
+  $('#top-btn').click( function() {
+    $('html, body').animate({
+      'scrollTop': 0
+    }, '400');
+  });
+
+  // ページ内リンク
+  $('header a').click(function() {
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('html, body').animate({
+      'scrollTop': position
+    }, '400');
+  });
+
   // アラートメッセージ
   $('.alert').fadeOut(3000);
+
+  //スライドショー
+  $('.a').slick({
+      dots: true,
+  });
+
 });

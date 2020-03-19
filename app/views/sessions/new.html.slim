@@ -61,7 +61,7 @@
 
 
 
-.introduction-wrapper
+.introduction-wrapper#introduce
   .container
     .heading
       h2 アプリケーション紹介
@@ -110,7 +110,7 @@
             p
             |このアプリケーションを使用することで自分を律した生活を送ることができます
 
-.faq-wrapper
+.faq-wrapper#faq
   .container
     .heading
       h2 FAQ
@@ -131,3 +131,10 @@
             span.fas.fa-plus-circle.kurobeni
             .answer
               p このアプリケーションを使用することで自分を律した生活を送ることができます。
+
+.slide-wrapper#slideshow
+  .container
+    .slicktest
+      = image_tag "slide1.jpg", class: "slide-image"
+      = image_tag "slide2.jpg", class: "slide-image"
+      = image_tag "slide3.jpg", class: "slide-image"
